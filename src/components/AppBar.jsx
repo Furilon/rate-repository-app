@@ -1,6 +1,7 @@
 import { Pressable, View, StyleSheet } from 'react-native';
 import Text from './Text';
 import Constants from 'expo-constants';
+import { Link } from 'react-router-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -25,10 +26,14 @@ const AppBar = () => {
     return (
         <View style={styles.container}>
             <Pressable style={styles.button}>
-                <Text style={styles.header}>Repositories</Text>
+                <Link to="/">
+                    <Text style={styles.header}>Repositories</Text>
+                </Link>
             </Pressable>
             <Pressable style={styles.button}>
-                <Text style={styles.header}>Sign in</Text>
+                <Link to="/signIn">
+                    <Text style={styles.header}>Sign in</Text>
+                </Link>
             </Pressable>
         </View>
     );
