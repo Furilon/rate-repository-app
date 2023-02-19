@@ -5,10 +5,13 @@ import Constants from 'expo-constants';
 const styles = StyleSheet.create({
   container: {
     paddingTop: Constants.statusBarHeight,
-    direction: "row",
+    flexDirection: "row",
     alignItems: "flex-start",
     backgroundColor: "#24292e",
     paddingHorizontal: 15
+  },
+  button: {
+    marginRight: 20,
   },
   header: {
     fontSize: 20,
@@ -21,8 +24,11 @@ const styles = StyleSheet.create({
 const AppBar = () => {
     return (
         <View style={styles.container}>
-            <Pressable>
+            <Pressable style={styles.button}>
                 <Text style={styles.header}>Repositories</Text>
+            </Pressable>
+            <Pressable style={styles.button}>
+                <Text style={styles.header}>Sign in</Text>
             </Pressable>
         </View>
     );
