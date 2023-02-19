@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     },
 })
 
-export default function Text ({ color, fontSize, fontWeight, style, ...props}) {
+export default function Text ({ color, fontSize, fontWeight, ...props}) {
     const textStyle = [
         styles.text,
         color === 'textSecondary' && styles.colorTextSecondary,
