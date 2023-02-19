@@ -1,6 +1,7 @@
 import Constants from 'expo-constants';
-import {Text, StyleSheet, View} from 'react-native'
-import RepositoryList from './RepositoryList';
+import {StyleSheet, View} from 'react-native'
+import Text from "./components/Text"
+import RepositoryList from './components/RepositoryList';
 
 const styles = StyleSheet.create({
     container: {

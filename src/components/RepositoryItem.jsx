@@ -1,4 +1,5 @@
-import {View, Text, StyleSheet} from "react-native"
+import {View, StyleSheet} from "react-native"
+import Text from "./Text"
 
 export default function RepositoryItem({fullName, description, language, forksCount, stargazersCount, ratingAverage, reviewCount}) {
     return (
