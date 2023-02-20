@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
   inner: {
     backgroundColor: theme.colors.backgroundWhite,
     flexDirection: "column",
-    // alignItems: "flex-start",
     paddingVertical: 15,
     paddingHorizontal: 15,
     
